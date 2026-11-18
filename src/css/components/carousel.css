@@ -95,3 +95,40 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
   border: 1px solid;
   border-radius: 50%;
 }
+
+/* Positionne le carrousel comme référence pour les boutons */
+.carousel {
+  position: relative;
+}
+
+/* Positionne les contrôles sur les images */
+.carousel__controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: calc(100% - 120px);
+  margin: 0;
+  pointer-events: none;
+}
+
+/* Positionne les boutons au-dessus des images */
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  pointer-events: auto;
+  background-color: white;
+}
+
+/* Place le bouton précédent à gauche */
+.carousel__button--prev {
+  left: 16px;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+/* Place le bouton suivant à droite */
+.carousel__button--next {
+  right: 16px;
+  transform: translateY(-50%);
+}
