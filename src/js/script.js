@@ -1,6 +1,7 @@
 // *** CAROUSEL ***
 // TODO
-    const carousel = document.querySelector('.carousel__container');
+
+const carousel = document.querySelector('.carousel__container');
 const prevButton = document.querySelector('.carousel__button--prev');
 const nextButton = document.querySelector('.carousel__button--next');
 
@@ -16,3 +17,6 @@ if (carousel) {
     carousel.scrollBy({ left: carousel.offsetWidth, behavior: "smooth" });
   });
 }
+
+const premierItem = document.querySelector(".carousel__item");
+scrollAmount = premierItem.clientWidth;
